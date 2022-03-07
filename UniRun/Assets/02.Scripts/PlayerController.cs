@@ -133,4 +133,13 @@ public class PlayerController : MonoBehaviour
             Die();
         }
     }
+
+    // 충돌! 유니티! 충돌 굉장히 다양하게 사용된다.
+    // 1. OnCollision - Enter, Stay, Exit
+    // - 두 콜라이더 끼리의 충돌에서 단 하나도 isTrigger가 체크 되어있지 않은 경우 사용
+    // 2. OnTrigger - Enter, Stay, Exit
+    // - 단 하나라도 isTrigger가 체크 되어있을때 사용
+
+    //* isTrigger는 물리적인 벽을 없애줌 근데 충돌은 감지함. OnTrigger 계열로 충돌 확인
+    // #)데드존에 부딪혀도 계속 밑으로 떨어지는것
 }
