@@ -93,6 +93,11 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.velocity = Vector2.zero;
         // 사망 상태를 true로 변경
         isDead = true;
+
+        // 게임 매니저의 게임오버 처리 실행
+        GameManager.instance.OnPlayerDead();
+        // instance라는 변수 안에 전체 내용이 들어있음. instance=this;로 인해
+        // 변수가 static 처리가 되어있어서 접근가능
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
