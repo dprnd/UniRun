@@ -13,7 +13,7 @@ public class ScrollingObject : MonoBehaviour
         if (!GameManager.instance.isGameover)
         {
             // 초당 speed의 속도로 왼쪽으로 평행이동(Translate가 함) 구현
-            transform.Translate(Vector3.left * speed * Time.deltaTime);   // == new Vector(-1,0,0
+            transform.Translate(Vector3.left * speed * Time.deltaTime);   // == new Vector(-1,0,0)
         }
 
         
